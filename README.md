@@ -1,75 +1,95 @@
-# DJS03: React Podcast Landing Page
+### React Podcast Discovery App
 
-## Overview
-
-In this project, you will build the landing page for a podcast discovery app using **React**. Your goal is to fetch podcast data from an external API and dynamically render a **responsive grid of podcast previews**. This project focuses on **data fetching**, **component structure**, **rendering logic**, and **layout styling**.
+A responsive React application that fetches podcast data from an external API and displays a dynamic grid of podcast previews. Built as part of the DJS03: React Podcast Landing Page project.
 
 ---
 
-## Core Objectives
+## 📌 Overview
 
-- Fetch podcast data from an API: https://podcast-api.netlify.app/ on initial page load.
-- Display a loading indicator while data is being fetched, and handle errors or empty results with a clear user message.
-- Render a responsive **grid layout** of podcast previews using modular, reusable React components.
-- Pass podcast data into components via props and render each podcast card with the following:
-  - Podcast **image**
-  - Podcast **title**
-  - Number of **seasons**
-  - Associated **genre names**
-  - Formatted **last updated** date (e.g., "2 days ago")
-- Apply clean, consistent layout and styling across different screen sizes using CSS Grid or Flexbox.
-- Maintain high-quality, readable code with clear structure and **JSDoc comments** for key functions and components.
+This project is a podcast discovery landing page built with React.
+It fetches podcast previews from an external API and displays them in a clean, responsive grid layout. Each podcast preview card shows the podcast image, the number of seasons, genre tags, and a human-readable “last updated” date.
+
+The app includes complete loading, error, and empty states, and is built with fully modular components and clean, documented code.
 
 ---
 
-## Technical Requirements
+## 🚀 Features
 
-- Use **React functional components**
-- Use the **Fetch API**
-- Use `useEffect()` to fetch data once on mount
-- Use `useState()` to manage podcast data
-- Use `.map()` to dynamically render PodcastPreviewCard components
-- Format dates using `date-fns` or a custom formatter
+# ✔ Data Fetching
+
+- Fetches podcast data from:
+  https://podcast-api.netlify.app/
+
+- Fetch runs automatically on page load using useEffect().
+
+- Handles loading, error, and fallback (empty) states.
+
+# ✔ Reusable Podcast Preview Card
+
+Each card displays:
+
+- Podcast image
+
+- Podcast title
+
+- Number of seasons
+
+- Associated genre names
+
+- Formatted “last updated” date (e.g., “2 days ago”)
+
+# ✔ Responsive Grid Layout
+
+1 column on mobile
+
+2 columns on small tablets
+
+3 columns on medium screens
+
+4 columns on larger desktops
+
+Built using CSS Grid + media queries
+
+# ✔ Clean & Modular Codebase
+
+- Component-based structure
+
+- Utility functions separated (e.g., date formatter)
+
+- API calls isolated in their own module
+
+- Organized CSS files
 
 ---
 
-## Responsiveness Requirements
+## 🧪 States Implemented
 
-- Must look good on:
-  - Desktop (≥1200px)
-  - Tablet (~768px)
-  - Mobile (~375px)
-- Use **CSS Grid** or **Flexbox**
-- Media queries or frameworks like **Tailwind CSS** are allowed
+# Loading State
+
+- Displays a loading message while fetching data.
+
+- Error State
+
+- Shows a meaningful error message if the API request fails.
+
+- Empty State
+
+- If no podcasts are returned, a user-friendly fallback message appears.
 
 ---
 
-## Deliverables
+## 🏗 Technologies Used
 
-- **Functional React Application**
+- React (functional components)
 
-  - A working React app that fetches podcast data from an external API on initial load.
-  - The app renders a grid of podcast previews using reusable components.
+- Vite
 
-- **Loading, Error, and Empty States**
+- JavaScript (ES modules)
 
-  - A clear loading indicator is displayed while fetching data.
-  - Meaningful error or empty state messaging is shown if the fetch fails or returns no results.
+- CSS Grid / Flexbox
 
-- **Podcast Preview Card Component**
+- Fetch API
 
-  - A reusable component that displays:
-    - Podcast image
-    - Podcast title
-    - Number of seasons
-    - Genre tags
-    - Last updated date in a human-readable format (e.g., "3 days ago")
+- Date formatting utilities
 
-- **Responsive Layout**
-
-  - Grid layout that adapts to mobile, tablet, and desktop screen sizes using responsive design principles.
-
-- **Codebase**
-  - Clean, modular code with clearly separated components.
-  - All major functions and modules documented with **JSDoc** comments.
-  - Consistent formatting across JavaScript, JSX, HTML, and CSS files.
+---
